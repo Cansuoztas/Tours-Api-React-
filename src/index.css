@@ -111,6 +111,7 @@ p {
   }
   body {
     font-size: 1rem;
+    
   }
   h1,
   h2,
@@ -120,12 +121,32 @@ p {
   }
 }
 /*  global classes */
+.textCenter{
+  text-align: center;
+}
+.ankaKusu{
+  
+/* translate: all; */
+border-radius: 50%;
+width: 100px;
+opacity: 0.7;
+animation: spin  4s infinite linear;
+
+ 
+}
+@keyframes spin { 
+  from { 
+      transform: rotate(0deg); 
+  } to { 
+      transform: rotate(360deg); 
+  }
+}
 
 /* section */
 .section {
   width: 90vw;
   margin: 0 auto;
-  max-width: var(--max-width);
+  max-width: 1170px;
 }
 
 @media screen and (min-width: 992px) {
