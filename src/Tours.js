@@ -5,6 +5,10 @@ const Tours = ({deleteTour,data}) => {
 
   return (
     <div className='section'>
+       <div className="title">
+        <h2>Our Tours</h2>
+        <div className="underline"></div>
+      </div>
       {
         data.map((item,index)=> <Tour key={index} deleteTour={deleteTour}  item={item} />)
       }
